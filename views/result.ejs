@@ -1,0 +1,45 @@
+<html lang="en-US">
+<head>
+    <title>Survey Analysis</title>
+</head>
+
+<body>
+    <h1>Survey analysis</h1>
+    <h2>Colors</h2>
+    <ul>
+    <% for (var i=0; i<results[0].length; i++){ %>
+        <li><%= results[0][i].color %> :  <%= results[0][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Yes/No</h2>
+    <ul>
+    <% for (var i=0; i<results[1].length; i++){ %>
+        <li><%= results[1][i].yn %> :  <%= results[1][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Enjoy or not</h2>
+    <ul>
+    <% for (var i=0; i<results[2].length; i++){ %>
+        <li><%= results[2][i].enjoy %> :  <%= results[2][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Scale q1</h2>
+    <ul>
+    <% for (var i=0; i<results[3].length; i++){ %>
+        <li><%= results[3][i].a %> :  <%= results[3][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Scale q2</h2>
+    <ul>
+    <% for (var i=0; i<results[4].length; i++){ %>
+        <li><%= results[4][i].b %> :  <%= results[4][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Scale q3</h2>
+    <ul>
+    <% for (var i=0; i<results[5].length; i++){ %>
+        <li><%= results[5][i].c %> :  <%= results[5][i].count %></li>
+    <% } %>    
+    </ul>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!-- <!DOCTYPE html> -->
+<html>
+  <head>
+	<title>Questionnaire</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<script src="/public/assets/action.js"></script>
+
+  </head>
+  
+	<body>
+		<div class="container p-3 my-3 border" style="background-color: aliceblue;">
+			<h1>Survey</h1>
+			<form>
+				<br>
+				<h2 style="color: orange;">What do you think of the User Interface in this <a href="http://amazon.ca">Amazon</a> site?</h2>	
+				<br>
+				
+				<a href="http://amazon.ca">
+					<img src="amazonFP.JPG" alt="http://amazon.ca" style="width:100%">
+				</a>
+
+				<br>
+				<br>
+				
+					<h2> Personal Information </h2>
+					<div class="container" style="width: 250px;">
+						<div class="form-group">
+							<label for="age">Age:</label>
+							<input type="number" class="form-control" placeholder="Enter age" id="age">
+
+						</div>
+					
+				<br>
+						<div class="form-group">
+							<label for="button">Gender:</label>
+							<div class="dropdown">
+								<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="g">
+									Select
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" id="m">Male</a>
+										<a class="dropdown-item" id="f">Female</a>
+										<a class="dropdown-item" id="o">Other</a>
+								</div>
+							</div>	
+						</div>	
+					</div>
+					<br>
+					<h3> Please answer the following questions as honestly as possible </h3>
+					<p> Which main theme colors do you prefer? </p>
+					<input type="checkbox" name="color" value="White">White<br>
+					<input type="checkbox" name="color" value="Blue">Blue<br>
+					<input type="checkbox" name="color" value="Orange">Orange<br>
+					<input type="checkbox" name="color" value="Black">Black<br>
+					
+
+					<br>
+					<p>This question is conrcerning the usability of the website on a scale of 1 to 5(1 being "I strongly disagree" 5 being "I strongly agree")</p>
+				
+					<table>
+
+						<tr>
+							<td></td>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+						</tr>
+
+						<tr>
+							<td class="center" style="padding-left: 200px;">The website is easy to use:  </td>
+							<td><input type="radio" id="one" name="a" value="1"></td>
+							<td><input type="radio" id="two" name="a" value="2"></td>
+							<td><input type="radio" id="three" name="a" value="3"></td>
+							<td><input type="radio" id="four" name="a" value="4"></td>
+							<td><input type="radio" id="five" name="a" value="5"></td>
+						</tr>
+						<tr>
+							<td class="center" style="padding-left: 200px;">I am able to easily find what I am looking for:  </td>
+							<td><input type="radio" id="six" name="b" value="6"></td>
+							<td><input type="radio" id="seven" name="b" value="7"></td>
+							<td><input type="radio" id="eight" name="b" value="8"></td>
+							<td><input type="radio" id="nine" name="b" value="9"></td>
+							<td><input type="radio" id="ten" name="b" value="10"></td>
+						</tr>
+						<tr>
+							<td class="center" style="padding-left: 200px;">I can easily navigate on the website:  </td>
+							<td><input type="radio" id="eleven" name="c" value="11"></td>
+							<td><input type="radio" id="twelve" name="c" value="12"></td>
+							<td><input type="radio" id="thirteen" name="c" value="13"></td>
+							<td><input type="radio" id="fourteen" name="c" value="14"></td>
+							<td><input type="radio" id="fifteen" name="c" value="15"></td>
+						</tr>
+					</table>
+
+					<br>
+					
+					<p>On a scale of 1 to 5, how do you enjoy using the website? (1 being "I do not enjoy" and 5 I really enjoy)</p>
+					<table>
+						<tr>
+							<td></td>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="center" style="padding-left: 125px;">I do not enjoy</td>
+							<td><input type="radio" id="one" name="enjoy" value="1"></td>
+							<td><input type="radio" id="two" name="enjoy" value="2"></td> 
+							<td><input type="radio" id="three" name="enjoy" value="3"></td>  
+							<td><input type="radio" id="four" name="enjoy" value="4"></td> 
+							<td><input type="radio" id="five" name="enjoy" value="5"></td>
+							<td class="center" style="padding-right: 125px;">I really enjoy</td>
+						</tr>
+					</table> 
+					<br>
+					
+					Is the website attractive?<br>
+					<div class="form-group">
+						<div class="dropdown">
+							<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" name="yn">
+								Select
+							</button>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" id="yes" value="yes">Yes</a>
+								<a class="dropdown-item" id="no" value="no">No</a>
+							</div>
+						</div>
+					</div>
+					
+			
+				
+				<br>
+				<br>
+				<div class="form-group">
+					<label for="comment">Please leave any comments or suggestions below:</label>
+					<textarea class="form-control" rows="5" cols="30" id="comment"></textarea>
+				</div>	
+				
+				<br>
+				<br>
+					
+				<button type="submit" class="btn btn-primary" id="submitButton">Submit</button> 
+					
+				<p id="signature">Site created by Jean-Pamphile Goutondji</p>	
+			
+			</form>
+		</div>
+	</body>
+</html> 

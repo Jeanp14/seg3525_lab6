@@ -1,3 +1,21 @@
+function selectM(){
+  document.getElementById("g").innerHTML = "Male";
+}
+
+function selectF(){
+  document.getElementById("g").innerHTML = "Female";
+}
+
+function selectO(){
+  document.getElementById("g").innerHTML = "Other";
+}
+function selectY(){
+  document.getElementById("yn").innerHTML = "Yes";
+}
+
+function selectN(){
+  document.getElementById("yn").innerHTML = "No";
+}
 
 $(document).ready(function(){
 
